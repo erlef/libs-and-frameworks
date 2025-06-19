@@ -1,0 +1,64 @@
+# https://docs.github.com/en/discussions/managing-discussions-for-your-community/creating-discussion-category-forms
+# https://docs.github.com/en/discussions/managing-discussions-for-your-community/syntax-for-discussion-category-forms
+title: "[General Discussion] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## General Working Group Discussion
+        Use this form to start a discussion about any topic related to our working group.
+
+  - type: input
+    id: topic-summary
+    attributes:
+      label: Topic Summary
+      description: Provide a brief one-line summary of your discussion topic
+      placeholder: "e.g., Exploring new approaches for quarterly planning"
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Background/Context
+      description: Provide any relevant background information or context
+      placeholder: |
+        - Why is this important?
+        - What prompted this discussion?
+        - Any relevant links or references?
+
+  - type: textarea
+    id: main-content
+    attributes:
+      label: Discussion Points
+      description: Present your main discussion points, questions, or proposals
+      placeholder: |
+        Share your thoughts, questions, or ideas here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: specific-questions
+    attributes:
+      label: Specific Questions (if any)
+      description: List any specific questions you'd like the community to address
+      placeholder: |
+        1. Question 1?
+        2. Question 2?
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues/Discussions
+      description: Link any related issues, PRs, or discussions
+      placeholder: "#123, #456"
+
+  - type: checkboxes
+    id: participation
+    attributes:
+      label: Participation
+      description: How would you like others to participate?
+      options:
+        - label: Open to all working group members
+        - label: Seeking input from specific expertise areas
+        - label: Looking for volunteers to help with this topic
