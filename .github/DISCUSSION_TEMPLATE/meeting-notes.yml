@@ -1,0 +1,106 @@
+# https://docs.github.com/en/discussions/managing-discussions-for-your-community/creating-discussion-category-forms
+# https://docs.github.com/en/discussions/managing-discussions-for-your-community/syntax-for-discussion-category-forms
+title: "[Meeting Notes] - "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Working Group Meeting Notes
+        Thank you for taking notes! Please fill out this form with the meeting details.
+
+  - type: input
+    id: meeting-date
+    attributes:
+      label: Meeting Date
+      description: When did the meeting take place?
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: input
+    id: meeting-time
+    attributes:
+      label: Meeting Time
+      description: What time was the meeting held?
+      placeholder: "https://time.is/compare/1300_in_UTC/PT/ET/CET/JST"
+    validations:
+      required: true
+
+  - type: input
+    id: note-taker
+    attributes:
+      label: Note Taker
+      description: Who took these notes?
+      placeholder: "@username"
+    validations:
+      required: true
+
+  - type: textarea
+    id: attendees
+    attributes:
+      label: Attendees
+      description: List all meeting attendees
+      placeholder: |
+        - @username1
+        - @username2
+        - Name (affiliation)
+    validations:
+      required: true
+
+  - type: textarea
+    id: agenda-items
+    attributes:
+      label: Agenda Items Discussed
+      description: What topics were covered in the meeting?
+      placeholder: |
+        1. Topic 1
+           - Discussion points
+           - Outcomes
+        2. Topic 2
+           - Discussion points
+           - Outcomes
+    validations:
+      required: true
+
+  - type: textarea
+    id: key-decisions
+    attributes:
+      label: Key Decisions
+      description: What decisions were made during the meeting?
+      placeholder: |
+        - Decision 1: Description
+        - Decision 2: Description
+
+  - type: textarea
+    id: action-items
+    attributes:
+      label: Action Items
+      description: List action items with assignees and due dates
+      placeholder: |
+        - [ ] Action item 1 - @assignee
+        - [ ] Action item 2 - @assignee
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Any other important information from the meeting
+      placeholder: Include any relevant links, resources, or follow-up items
+
+  - type: input
+    id: next-meeting
+    attributes:
+      label: Next Meeting
+      description: When is the next meeting scheduled?
+      placeholder: "YYYY-MM-DD at HH:MM timezone"
+
+  - type: checkboxes
+    id: review-checklist
+    attributes:
+      label: Review Checklist
+      description: Please confirm before posting
+      options:
+        - label: I have reviewed these notes for accuracy
+          required: true
+        - label: I have tagged relevant attendees for review
+        - label: Action items have been assigned to appropriate people
