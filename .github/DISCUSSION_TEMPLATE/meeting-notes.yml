@@ -1,12 +1,12 @@
 # https://docs.github.com/en/discussions/managing-discussions-for-your-community/creating-discussion-category-forms
 # https://docs.github.com/en/discussions/managing-discussions-for-your-community/syntax-for-discussion-category-forms
-title: "[Meeting Notes] - "
+title: "[Meeting Notes] "
 body:
   - type: markdown
     attributes:
       value: |
         ## Working Group Meeting Notes
-        Thank you for taking notes! Please fill out this form with the meeting details.
+        Thank you for taking notes! Please fill out this form with the meeting details, and append todays date ( - YYYY-MM-DD) to the above title.
 
   - type: input
     id: meeting-date
